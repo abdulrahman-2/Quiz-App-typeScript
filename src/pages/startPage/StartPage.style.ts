@@ -10,9 +10,16 @@ export const StartPageWarper = styled.div`
 
   h1 {
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 600;
-    max-width: 1100px;
+
+    @media (min-width: 640px) {
+      font-size: 40px;
+    }
+
+    @media (min-width: 992px) {
+      font-size: 50px;
+    }
   }
 
   .linkBtn {

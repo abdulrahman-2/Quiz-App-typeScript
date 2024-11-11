@@ -9,12 +9,17 @@ export const QuizPageWrapper = styled.div`
   background-color: #0c1d2d;
   color: white;
   text-align: center;
+  padding: 15px;
 
   .title {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
     letter-spacing: 1.2px;
     margin-bottom: 20px;
+
+    @media (min-width: 640px) {
+      font-size: 80px;
+    }
   }
 
   .score {
@@ -26,8 +31,16 @@ export const QuizPageWrapper = styled.div`
     background-color: white;
     border-radius: 12px;
     padding: 20px;
-    width: 800px;
+    width: 100%;
     color: black;
+
+    @media (min-width: 640px) {
+      width: 600px;
+    }
+
+    @media (min-width: 992px) {
+      width: 800px;
+    }
 
     .quest-title {
       margin: 30px;
@@ -75,9 +88,13 @@ export const QuizPageWrapper = styled.div`
     }
 
     .quest-num {
-      display: flex;
-      align-items: center;
-      gap: 5px;
+      display: none;
+
+      @media (min-width: 640px) {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
 
       span {
         width: 30px;
