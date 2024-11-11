@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const StartPageWarper = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: grid;
   place-content: center;
-  background-color: #0c1d2d;
   color: white;
+  padding: 50px 15px;
 
   h1 {
     text-align: center;

@@ -2,14 +2,11 @@ import styled from "styled-components";
 import { ButtonWrapperProps } from "../../types/types";
 
 export const QuizPageWrapper = styled.div`
-  height: 100vh;
-  width: 100vw;
   display: grid;
   place-content: center;
-  background-color: #0c1d2d;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 50px 15px;
 
   .title {
     font-size: 40px;
@@ -18,7 +15,7 @@ export const QuizPageWrapper = styled.div`
     margin-bottom: 20px;
 
     @media (min-width: 640px) {
-      font-size: 80px;
+      font-size: 60px;
     }
   }
 
